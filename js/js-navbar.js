@@ -1,9 +1,10 @@
-(function($){
-  
-  $(".menu-icon").on("click", function(){
-    	$(this).toggleClass("open");
-    	$(".container").toggleClass("nav-open");
-    	$("nav ul li").toggleClass("animate");
-  });
-  
-})(jQuery);
+$('.menu').on('click', function(){
+  if ($('.l-site').hasClass('is-open')) {
+    $('.menu').removeClass('is-active');
+  	$('.l-site').removeClass('is-open');
+  } else {
+    $('.menu').addClass('is-active');
+  	$('.l-site').addClass('is-open');
+  }
+});
+
