@@ -331,7 +331,7 @@ Intro
 }
 @media only screen and (min-width: 768px) {
   #cd-intro {
-    height: 400px;
+    height: 600px;
   }
   #cd-intro #cd-intro-tagline {
     padding-top: 160px;
@@ -343,7 +343,7 @@ Intro
 }
 @media only screen and (min-width: 1170px) {
   #cd-intro {
-    height: 600px;
+    height: 800px;
   }
   #cd-intro #cd-intro-tagline {
     padding-top: 250px;
