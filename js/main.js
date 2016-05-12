@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
 
 	//smooth scrolling when clicking on the secondary navigation items
 	secondaryNav.find('ul a').on('click', function(event){
-        event.preventDefault();
+    //    event.preventDefault();
         var target= $(this.hash);
         $('body,html').animate({
         	'scrollTop': target.offset().top - secondaryNav.height() + 1
