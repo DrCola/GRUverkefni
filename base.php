@@ -87,18 +87,6 @@ echo $_SESSION["name"];
           </a>
         </li>
         <li>
-          <a href="#cd-placeholder-3">
-            <b>Notifications</b>
-            <span><img src="icons/NotificationsIcon.png"></span><!-- icon -->
-          </a>
-        </li>
-        <li>
-          <a href="#cd-placeholder-4">
-            <b>Music</b>
-            <span><img src="icons/MusicIcon.png"></span><!-- icon -->
-          </a>
-        </li>
-        <li>
           <a href="games.html">
             <b>Games</b>
             <span><img src="icons/VideoGamesIcon.png"></span><!-- icon -->
@@ -109,13 +97,6 @@ echo $_SESSION["name"];
             <b>Movies</b>
             <span><img src="icons/MovieIcon.png"></span><!-- icon -->
           </a>
-        </li>
-        <li>
-          <a href="#cd-placeholder-5">
-            <b>Submit</b>
-            <span><img src="icons/SubmitIcon.png"></span><!-- icon -->
-          </a>
-        </li>
       </ul>
     </nav>
   </div> <!-- .cd-secondary-nav -->

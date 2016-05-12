@@ -1,0 +1,39 @@
+
+.backrr {
+  width: 600px;
+    padding: 25px;
+    
+    margin: 25px;
+  border-radius:  40px;
+  margin:   0 auto;
+  background: rgba(0,0,0,.8);
+    padding-top: 8em;
+ 
+}
+.myndinn {
+   width:400px;
+  height:400px;
+ padding: 25px;
+  margin:0 auto;
+}
+.module {
+ 
+
+  margin: 10px 0 0 10px;
+  position: relative;
+  float: left;
+}
+.lr p {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  margin: 0;
+}
+
+
+#here {
+    font-size:  50px;
+    color:white;
+}
