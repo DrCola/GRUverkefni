@@ -1,16 +1,19 @@
 <?php 
-$con = mysqli_connect("82.148.66.15","0812952049","drcolaman");
-mysql_select_db("0812952049_gru");
-$res=mysql_query("select * from users");
-echo "<table>";
-while($row=mysql_fetch_array($res))
-{
-  echo "<tr>";
-  echo "<td>";?> <img src="<?php echo $row["avatar"]; ?>" height="100" width="100"> <?php echo "</td>";
-  echo "<td>"; echo $row["name"]; echo "</td>";
-  echo "</tr>";
-}
-echo "</table>";
+$db_host = "tsuts.tskoli.is";
+$db_name = "0812952049_gru";
+$db_user = "0812952049";
+$db_pass = "drcolaman";
+
+try {
+    $connection = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
+    // set the PDO error mode to exception
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; 
+    }
+catch(PDOException $e)
+    {
+    echo "Connection failed: " . $e->getMessage();
+    }
 ?>
 <!DOCTYPE html>
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -123,7 +126,7 @@ echo $_SESSION["name"];
 
          
 
-         <form method="post" enctype="multipart/form-data">
+         <!--<form method="post" enctype="multipart/form-data">
           <table border="1" width="80%">
             <tr>
               <th width="50%">avatar name</th>
@@ -141,7 +144,7 @@ echo $_SESSION["name"];
             </tr>
           </table>
         </form>
-
+-->
         <div class="row">
         <div class="large-12 columns">
         </div>
