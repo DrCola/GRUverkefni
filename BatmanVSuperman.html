@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/foundation.css">
         <script src="js/modernizr.js"></script>
+                <script src="js/hover.js"></script>
         <script src="js/jquery-2.1.1.js"></script>
   </head>
   <body>
@@ -28,25 +29,25 @@
       <ul>
         <li>
           <a href="index.html">
-            <span><img src="icons/HomeIcon.png"></span><!-- icon -->
+            <span><img src="icons/HomeIcon.png" onmouseover="hoverHome(this);" onmouseout="unhoverHome(this);"></span><!-- icon -->
             <b>Home</b>
           </a>
         </li>
         <li>
-          <a href="settings.html">
-            <span><img src="icons/OptionsIcon.png"></span><!-- icon -->
-            <b>Settings</b>
+          <a href="logout.php">
+            <span><img src="icons/OptionsIcon.png" onmouseover="hoverOptions(this);" onmouseout="unhoverOptions(this);"></span><!-- icon -->
+            <b>Log Out</b>
           </a>
         </li>
         <li>
           <a href="games.html">
-            <span><img src="icons/VideoGamesIcon.png"></span><!-- icon -->
+            <span><img src="icons/VideoGamesIcon.png" onmouseover="hoverVideoGames(this);" onmouseout="unhoverVideoGames(this);"></span><!-- icon -->
             <b>Games</b>
           </a>
         </li>
         <li>
           <a href="movies.html">
-            <span><img src="icons/MovieIcon.png"></span><!-- icon -->
+            <span><img src="icons/MovieIcon.png" onmouseover="hoverMovie(this);" onmouseout="unhoverMovie(this);"></span><!-- icon -->
             <b>Movies</b>
           </a>
         </li>
@@ -115,8 +116,8 @@
 <img src="Thumbnails/BatmanvSuperman.png">
 <div class="hide-for-small panel">
 <h3>Batman v Superman: Dawn of Justice</h3>
-<h5 class="subheader"><h4>Action, Adventure, Sci-Fi.</h4> <br>
-						Henry is resurrected from death with no memory, and he must save his wife from a telekinetic warlord with a plan to bio-engineer soldiers.</h5>
+<h5 class="subheader"><h4>Action, Adventure, Fantasy</h4> <br>
+						Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.</h5>
 </div>
 
 </div>
@@ -128,14 +129,8 @@ src="https://www.youtube.com/embed/0WWzgGyAH6Y" frameborder="0" allowfullscreen>
  
 <div class="row">
 <div class="large-12 columns">
-<div class="panel">
 <div class="row">
-<div class="large-2 small-6 columns"><img src="http://placehold.it/300x300&amp;text=Site%20Owner"></div>
-<div class="large-10 small-6 columns">
-<strong>This Site Is Managed By</strong>
-<hr>
-Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum
-odio ornare sagittis
+<div class="large-2 small-6 columns">
 </div>
 </div>
 </div>
