@@ -1,0 +1,188 @@
+<?php 
+$con = mysqli_connect("82.148.66.15","0812952049","drcolaman");
+mysql_select_db("0812952049_gru");
+$res=mysql_query("select * from users");
+echo "<table>";
+while($row=mysql_fetch_array($res))
+{
+  echo "<tr>";
+  echo "<td>";?> <img src="<?php echo $row["avatar"]; ?>" height="100" width="100"> <?php echo "</td>";
+  echo "<td>"; echo $row["name"]; echo "</td>";
+  echo "</tr>";
+}
+echo "</table>";
+?>
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databasing</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <script src="js/modernizr.js"></script>
+        <script src="js/jquery-2.1.1.js"></script>
+                  <script>
+$(document).ready(function($){
+
+//the highest number of the image you want to load
+var upperLimit = 78;
+
+//get random number between 1 and 10
+//change upperlimit above to increase or 
+//decrease range
+var randomNum = Math.floor((Math.random() * upperLimit) + 1);    
+
+
+ //change the background image to a random jpg
+ //edit add closing )  to prevent syntax error
+ $("#cd-intro").css("background-image","url('slider/img" + randomNum + ".jpg')");//<--changed path
+
+
+
+
+ });
+ </script>
+  </head>
+  <body>
+
+    <nav class="cd-primary-nav">
+     
+    </nav> <!-- cd-primary-nav -->
+  </header>
+  <section id="cd-intro">
+
+    <div id="cd-intro-tagline">
+
+    </div> <!-- #cd-intro-tagline -->
+  </section> 
+    
+<div class="cd-secondary-nav">
+    <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#cd-placeholder-1">
+            <?php
+session_start();
+echo $_SESSION["name"];
+?>
+<span><img src="icons/HomeIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="#cd-placeholder-1">
+            <b>Home</b>
+            <span><img src="icons/HomeIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="#cd-placeholder-2">
+            <b>Settings</b>
+            <span><img src="icons/OptionsIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="#cd-placeholder-3">
+            <b>Notifications</b>
+            <span><img src="icons/NotificationsIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="#cd-placeholder-4">
+            <b>Music</b>
+            <span><img src="icons/MusicIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="games.html">
+            <b>Games</b>
+            <span><img src="icons/VideoGamesIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="#cd-placeholder-5">
+            <b>Movies</b>
+            <span><img src="icons/MovieIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+        <li>
+          <a href="#cd-placeholder-5">
+            <b>Submit</b>
+            <span><img src="icons/SubmitIcon.png"></span><!-- icon -->
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div> <!-- .cd-secondary-nav -->
+
+          </ul>
+        </section>
+        </nav>
+
+         
+
+         <form method="post" enctype="multipart/form-data">
+          <table border="1" width="80%">
+            <tr>
+              <th width="50%">avatar name</th>
+              <td width="50%"><input type="text" name="txt_image_name"></td>
+            </tr>
+            <tr>
+              <th width="50%">Upload image</th>
+              <td width="50%"><input type="file" name="avatar"></td>
+            </tr>
+            <tr> 
+              <td></td>
+              <td>
+                <input type="submit" name="Submit" value="Save">
+              </td>
+            </tr>
+          </table>
+        </form>
+
+        <div class="row">
+        <div class="large-12 columns">
+        </div>
+        <div class="large-9 columns right">
+          <form>
+            <div class="row collapse">
+              <div class="large-10 small-8 columns">
+              </div>
+
+              <div class="large-2 small-4 columns">
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+        </div>
+
+
+
+         
+        <div class="row">
+        <div class="large-12 columns">
+        <div id="sliderFrame">
+        <div class="wrapper">
+
+
+        <div class="row">
+        <div class="large-6 columns">
+        </div>
+        </div>
+         <footer class="row">
+        <div class="large-12 columns">
+        </div>
+      </footer>
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+        $(document).foundation();
+        </script>
+
+</body></html> 
