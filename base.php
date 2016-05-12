@@ -25,6 +25,7 @@ catch(PDOException $e)
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/foundation.css">
         <script src="js/modernizr.js"></script>
+                <script src="js/hover.js"></script>
         <script src="js/jquery-2.1.1.js"></script>
                   <script>
 $(document).ready(function($){
@@ -61,42 +62,39 @@ var randomNum = Math.floor((Math.random() * upperLimit) + 1);
     </div> <!-- #cd-intro-tagline -->
   </section> 
     
+
+            <?php
+session_start();
+echo $_SESSION["name"];
+?>
 <div class="cd-secondary-nav">
     <a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
     <nav>
       <ul>
         <li>
-          <a href="#cd-placeholder-1">
-            <?php
-session_start();
-echo $_SESSION["name"];
-?>
-<span><img src="icons/HomeIcon.png"></span><!-- icon -->
-          </a>
-        </li>
-        <li>
-          <a href="#cd-placeholder-1">
+          <a href="index.html">
+            <span><img src="icons/HomeIcon.png" onmouseover="hoverHome(this);" onmouseout="unhoverHome(this);"></span><!-- icon -->
             <b>Home</b>
-            <span><img src="icons/HomeIcon.png"></span><!-- icon -->
           </a>
         </li>
         <li>
-          <a href="#cd-placeholder-2">
+          <a href="settings.html">
+            <span><img src="icons/OptionsIcon.png" onmouseover="hoverOptions(this);" onmouseout="unhoverOptions(this);"></span><!-- icon -->
             <b>Settings</b>
-            <span><img src="icons/OptionsIcon.png"></span><!-- icon -->
           </a>
         </li>
         <li>
           <a href="games.html">
+            <span><img src="icons/VideoGamesIcon.png" onmouseover="hoverVideoGames(this);" onmouseout="unhoverVideoGames(this);"></span><!-- icon -->
             <b>Games</b>
-            <span><img src="icons/VideoGamesIcon.png"></span><!-- icon -->
           </a>
         </li>
         <li>
-          <a href="#cd-placeholder-5">
+          <a href="movies.html">
+            <span><img src="icons/MovieIcon.png" onmouseover="hoverMovie(this);" onmouseout="unhoverMovie(this);"></span><!-- icon -->
             <b>Movies</b>
-            <span><img src="icons/MovieIcon.png"></span><!-- icon -->
           </a>
+        </li>
       </ul>
     </nav>
   </div> <!-- .cd-secondary-nav -->
